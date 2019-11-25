@@ -52,9 +52,6 @@ function checkout() {
     }
 
     ]).then(function(answer){
-     // console.log(answer);
-     // console.log(answer.number);
-     // console.log(answer.userChoice);
       var query = "SELECT * FROM products WHERE id = "+answer.userChoice;
       connection.query(query, function(err, response){
         if(err){
@@ -63,10 +60,8 @@ function checkout() {
         if(response.length < 1){
           console.log('please choose from the list');
         } else{
-        //  console.log(response);
-        //  console.log(response[0].stock_quantity);
-          if (answer.number <= response[0].stock_quantity) {
-           // console.log("you got it"); 
+        
+          if (answer.number <= response[0].stock_quantity) { 
             var newQuatity = response[0].stock_quantity - answer.number
             var command = "UPDATE products SET stock_quantity = "+newQuatity+" WHERE id = "+answer.userChoice;
             connection.query(command, function(err, res){
@@ -89,48 +84,7 @@ function checkout() {
           }
         }
       });
-    })
-    
-    // .then(function(answer) {
-    //     connection.query("SELECT id,product_name,department_name,price,stock_quantity FROM products WHERE ?",
-    //       {id: answer.item},  function(err, res) {
-
-    //         //console.log("count " + answer.count);
-
-    //         if (parseInt(answer.count) > res[0].stock_quantity) {
-
-    //           console.log("sorry, there are only " + res[0].stock_quantity + " left");
-    //           checkout();
-
-    //         }
-
-    //         else {
-    //           console.log("Your purchase of " + answer.count + ' ' + res[0].product_name +"/s total cost is: $ " + parseInt(res[0].price) * parseInt(answer.count));
-    //          var quantityLeft = res[0].stock_quantity - answer.count;
-    //                 console.log(quantityLeft);
-    //                 connection.query(
-    //                   "UPDATE products SET ? WHERE ?",
-    //                   [
-    //                     {
-    //                       stock_quantity: quantityLeft
-    //                     },
-    //                     {
-    //                       id: answer.item
-    //                     }
-    //                   ],
-    //                   function(error) {
-    //                     if (error) throw err;
-                       
-                       
-    //                   }); 
-    //                 console.log("Inventory updated. There are  " + quantityLeft + " left"); 
-    //                 viewProducts();
-    //          }
-
-
-    //       })
-    // });
-
+    }) 
 };      
 
 
