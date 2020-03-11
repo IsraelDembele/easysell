@@ -20,7 +20,7 @@ function viewProduct(answer){
       if(err){
         console.log(err);
       }
-      var theDisplayTable = new Table({
+    //  var theDisplayTable = new Table({
         head: ['ID', 'Product Name', 'department_name', 'Price', 'Quantity'],
 
           colWidths: [10, 30, 15, 10, 14] 
