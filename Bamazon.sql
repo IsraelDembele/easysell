@@ -9,7 +9,7 @@ CREATE TABLE products (
   stock_quantity INT,
   PRIMARY KEY (id)
   ); 
-sellect all from *
+
 SELECT * FROM products WHERE id = 9;
 SELECT * FROM products WHERE id = 4;
   UPDATE products SET stock_quantity = 13 WHERE id = 4; 
