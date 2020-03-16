@@ -11,8 +11,7 @@ To run the program please follow the steps below:
 make sure that you have npm mysql, inquirer and cli-table installed, 
 then run
 node bamazonCustomer.js
-choose id;
-choose quantity;
+choose id;  choose quantity;
 
 (Don't forget to run 'npm install' after cloning this project!!!)
 ![Picture](https://github.com/israel81boot/easysell/blob/master/readme%20images/2019-11-24%20(1).png)
