@@ -8,6 +8,8 @@ In order to run this application, you should have the MySQL database already set
 
 ## Running the Program
 To run the program please follow the steps below:
+make sure that you have npm mysql, inquirer and cli-table installed, 
+then
 
 node bamazonCustomer.js
 choose id;
