@@ -31,7 +31,7 @@ function viewProduct(answer){
             [res[i].id, res[i].product_name, res[i].department_name, res[i].price, res[i].stock_quantity]
             );
          }
-            console.log(theDisplayTable.toString());
+            // console.log(theDisplayTable.toString());
 
 
       checkout();
