@@ -49,7 +49,8 @@ function checkout() {
       name: "number",
       type: "input",
       message: "How many would you like to buy?"
-    }
+    } 
+    console.log()
 
     ]).then(function(answer){
       var query = "SELECT * FROM products WHERE id = "+answer.userChoice;
