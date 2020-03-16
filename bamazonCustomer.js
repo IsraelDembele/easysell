@@ -78,7 +78,7 @@ function checkout() {
               checkout(answer);
             })
           } 
-          else { 
+         // else { 
             console.log ("sorry! out of stock");
             viewProduct();
             checkout(answer);
