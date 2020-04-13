@@ -17,7 +17,10 @@ choose id;  choose quantity;
 ![Picture](https://github.com/israel81boot/easysell/blob/master/readme%20images/2019-11-24%20(1).png)
 
 ## Customer Interface
-The customer interface allows the user to view the current inventory of store items: item ID, product name, price, department,and stock quantity. The user is then able to purchase one of the existing items by entering the item ID and the desired quantity. If the selected quantity is currently in stock, the user's order is fulfilled, displaying the total purchase price , item name, quantity and updating the store database. If the desired quantity is not available, a message is display to the user.
+The customer interface allows the user to view the current inventory of store items: item ID, product name, price, department,and stock quantity. The user is then able to purchase one of the existing items by entering the item ID and the desired quantity. If the selected quantity is currently in stock, the user's order is fulfilled, displaying the total purchase price , item name, quantity and updating the store database. If the desired quantity is not available, a message is display to the user. 
+
+## link 
+https://github.com/israel81boot/easysell
 
 ## Order Place
 
@@ -28,4 +31,9 @@ The customer interface allows the user to view the current inventory of store it
 
 
 ## Out of Stock 
-![Picture](https://github.com/israel81boot/easysell/blob/master/readme%20images/2019-11-24%20(4).png)
+![Picture](https://github.com/israel81boot/easysell/blob/master/readme%20images/2019-11-24%20(4).png)  
+
+## Author 
+- Israel Dembele 
+
+
